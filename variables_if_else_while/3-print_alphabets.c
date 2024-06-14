@@ -11,11 +11,11 @@ int main(void)
 {
 	putchar(hola);
 }
+	putchar('\n');
+
 	for (HOLA = 'A'; HOLA <= 'z'; HOLA++)
 {
 	putchar(HOLA);
 }
-	putchar('\n');
-
 	return (0);
 }
