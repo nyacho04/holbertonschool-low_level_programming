@@ -14,7 +14,7 @@ int main(void)
 }
 	for (nya2 = 'a'; nya2 <= 'f'; nya2++)
 {
-	putchar(nya);
+	putchar(nya2);
 }
 	putchar('\n');
 	return (0);
