@@ -6,10 +6,13 @@
 int main(void)
 {	char hola;
 	char HOLA;
+
 	for (hola = 'a'; hola <= 'z'; hola++)
 {
 	putchar(hola);
 }
+	putchar('\n');
+
 	for (HOLA = 'A'; HOLA <= 'z'; HOLA++)
 {
 	putchar(HOLA);
