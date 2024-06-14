@@ -10,6 +10,7 @@ int main(void)
 	for (hola = 'a'; hola <= 'z'; hola++)
 {
 		putchar(hola);
+}
 		putchar('\n');
 		return (0);
 }
