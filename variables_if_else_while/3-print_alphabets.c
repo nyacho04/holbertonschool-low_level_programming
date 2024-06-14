@@ -4,18 +4,18 @@
  * Return: Always 0 (Success)
  */
 int main(void)
+
 {	char hola;
 	char HOLA;
 
 	for (hola = 'a'; hola <= 'z'; hola++)
 {
-	putchar(hola);
+		putchar(hola);
 }
-	putchar('\n');
-
-	for (HOLA = 'A'; HOLA <= 'z'; HOLA++)
+	for (HOLA = 'A'; HOLA <= 'Z'; HOLA++)
 {
-	putchar(HOLA);
+		putchar(HOLA);
 }
+		putchar('\n');
 	return (0);
 }
