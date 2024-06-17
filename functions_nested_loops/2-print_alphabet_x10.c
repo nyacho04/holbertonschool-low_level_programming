@@ -13,7 +13,9 @@ void print_alphabet_x10(void)
 	for (nya2 = 0; nya2 < 10; nya2++)
 	{
 		for (nya = 'a'; nya <= 'z'; nya++)
+		{
 			_putchar(nya);
+		}
 			_putchar('\n');
 	}
 }
