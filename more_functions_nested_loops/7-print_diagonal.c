@@ -1,0 +1,25 @@
+#include "main.h"
+
+void print_diagonal(int n)
+{
+	int nya, nya2;
+
+	if (n > 0)
+	{
+		for (nya = 0; nya < n; nya++)
+		{
+			for (nya2 = 0; nya2 < nya; nya2++)
+			{
+				_putchar(' ');
+			_putchar('\\');
+
+			if (nya == n - 1)
+				continue;
+
+			_putchar('\n');
+			}
+		}
+
+		_putchar('\n');
+	}
+}
