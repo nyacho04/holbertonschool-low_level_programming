@@ -7,15 +7,19 @@
  */
 void print_rev(char *s)
 {
-	int nya;
+	int nya, nya2, nya3;
 
-		for(nya = 0; s[nya]; nya++)
+	nya = 0;
+		for (nya = 0; s[nya] != '\0'; nya++)
 		{
-			_putchar(s[nya]);
+			nya++;
 		}
-		for(ayn = 0; s[ayn]; ayn++)
+
+		nya3 = nya;
+
+		for (nya2 = nya3; s[nya2] >= 0; nya2--)
 		{
-			_putchar(s[ayn]);
+			_putchar(s[nya2]);
 		}
-			_putchar('\n');
+_putchar('\n');
 }
