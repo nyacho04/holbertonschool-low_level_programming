@@ -7,7 +7,7 @@
  */
 void print_rev(char *s)
 {
-	int nya, nya2, nya3;
+	int nya, nya2;
 
 	nya = 0;
 		while (s[nya] != '\0')
@@ -15,9 +15,7 @@ void print_rev(char *s)
 			nya++;
 		}
 
-		nya3 = nya;
-
-		for (nya2 = nya3; s[nya2] != '\0'; nya2--)
+		for (nya2 = nya - 1; nya2 >= '0'; nya2--)
 		{
 			_putchar(s[nya2]);
 		}
