@@ -10,7 +10,7 @@ void print_rev(char *s)
 	int nya, nya2, nya3;
 
 	nya = 0;
-		while (s[nya] != '0')
+		while (s[nya] != '\0')
 		{
 			nya++;
 		}
