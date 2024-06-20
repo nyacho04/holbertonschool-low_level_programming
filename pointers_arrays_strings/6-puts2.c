@@ -9,7 +9,7 @@ void puts2(char *str)
 
 	nya = 0;
 
-		while ((str[nya]) != '0')
+		while ((str[nya]) != '\0')
 		{
 			nya++;
 		}
