@@ -17,10 +17,9 @@ void print_rev(char *s)
 
 		nya3 = nya;
 
-		for (nya2 = nya3; s[nya2] != '0'; nya2--)
+		for (nya2 = nya3; s[nya2] != '\0'; nya2--)
 		{
 			_putchar(s[nya2]);
 		}
 _putchar('\n');
-_putchar('\0');
 }
