@@ -22,4 +22,5 @@ void print_rev(char *s)
 			_putchar(s[nya2]);
 		}
 _putchar('\n');
+_putchar('\0');
 }
