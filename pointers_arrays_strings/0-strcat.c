@@ -10,10 +10,11 @@ char *_strcat(char *dest, char *src)
 {
 	int nya, nya2;
 
-	nya2 = 0;
 	nya = 0;
+	nya2 = 0;
 
-	for (nya = 0; dest[nya] != '\0'; nya++)
+	while (dest[nya] != '\0')
+		nya++;
 
 	while (src[nya2] != '\0')
 	{
