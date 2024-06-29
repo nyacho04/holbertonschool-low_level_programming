@@ -3,7 +3,7 @@
 /**
  * main - prints the name of the program
  * @argv: array of arguments
- * @argc
+ * @argc: array of numbers
  * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])
