@@ -9,37 +9,29 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int **nya;
-	int a, b;
-
-	if (height <= 0 || width <= 0)
-		return (NULL);
-
-	nya = (int **) malloc(sizeof(int *) * height);
-
-	if (nya == NULL)
+int **nya;
+int i;
+int a;
+	if (width <= 0)
+{
 	return (NULL);
-
-	for (a = 0; a < height; a++)
-{
-	nya[a] = (int *) malloc(sizeof(int) * width);
-	if (nya[a] == NULL)
-{
-	free(nya);
-	for (b = 0; b <= a; b++)
-	free(nya[b]);
-
-		return (NULL);
 }
-	}
-
-	for (a = 0; a < height; a++)
-	{
-	for (b = 0; b < width; b++)
-		{
-	nya[a][b] = 0;
-	}
+	if (height <= 0)
+{
+	return (NULL);
 }
-	free(nya);
+	nya = (int **)malloc(sizeof(int *) * height);
+	if (nya == NULL)
+{
+	return (NULL);
+}
+	for (i = 0; i < height; i++)
+{
+	nya[i] = (int *)malloc(width * sizeof(int));
+	for (a = 0; a < width ; a++)
+{
+	nya[i][a] = 0;
+}
+}
 	return (nya);
 }
