@@ -23,10 +23,12 @@ int **alloc_grid(int width, int height)
 	for (a = 0; a < height; a++)
 {
 	nya[a] = (int *) malloc(sizeof(int) * width);
-	if (nya[a] == NULL)
+	if (!nya[a])
+		return (NULL);
 {
 	free(nya);
 	for (b = 0; b <= a; b++)
+
 		return (NULL);
 }
 	}
