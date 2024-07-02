@@ -26,8 +26,6 @@ int a;
 	return (NULL);
 }
 	for (i = 0; i < height; i++)
-	free(nya[i]);
-	free(nya);
 {
 	nya[i] = (int *)malloc(width * sizeof(int));
 	for (a = 0; a < width ; a++)
