@@ -6,7 +6,7 @@
 #include <stdio.h>
 /**
  * struct listint_s - singly linked list node
- * @i: integer
+ * @n: integer
  * @next: pointer to the next node in the list
  *
  * Description: A node in a singly linked list where each node contains
@@ -14,8 +14,9 @@
  */
 typedef struct dlistint_s
 {
-	int i;
+	int n;
 	struct dlistint_s *next;
+	struct dlistint_s *prev;
 }
 dlistint_t;
 
