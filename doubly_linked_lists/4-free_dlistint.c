@@ -2,23 +2,28 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
-
 /**
- * main - check the code
+ * free_dlistint - frees a dlistint_t list
  *
- * Return: Always EXIT_SUCCESS.
+ * @head: head of the list
+ * Return: no return
  */
 void free_dlistint(dlistint_t *head)
 {
-	dlistint_t *nya;
+	dlistint_t *temp;
 
-	if (head != NUL)
+	if (head != NULL)
+	{
 
 	while (head->prev != NULL)
+	{
 			head = head->prev;
-	while (nya = head != NULL)
-{
-	head = head->next;
-	free nya;
+	}
+	while (head != NULL)
+	{
+		temp = head;
+		head = head->next;
+		free(nya);
+}
 }
 }
