@@ -3,24 +3,23 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * 
+ *
  * Description: This function prints a message.
- * 
+ *
  * Return: Always 0 (success)
  */
 int main(void)
 {
-int n;
+	int n;
 
-srand(time(0));
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
-n = rand() - RAND_MAX / 2;
-
-if (n > 0)
-    printf("%d is positive\n", n);
-else if (n < 0)
-	printf("%d is negative\n", n);
-else
-	printf("%d is zero\n", n);
-return (0);
+	if (n > 0)
+		printf("%d is positive\n", n);
+	else if (n < 0)
+		printf("%d is negative\n", n);
+	else
+		printf("%d is zero\n", n);
+	return (0);
 }
