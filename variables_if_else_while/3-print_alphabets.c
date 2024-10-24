@@ -19,3 +19,8 @@ int main(void)
 	{
 		putchar(letra);
 	}
+
+	putchar('\n');
+
+	return (0);
+	}
