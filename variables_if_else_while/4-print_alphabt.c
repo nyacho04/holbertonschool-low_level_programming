@@ -6,18 +6,17 @@
 *
 * Return: Always 0 (success)
 */
-
 int main(void)
 {
 	char letra;
 
 	for  (letra = 'a'; letra <= 'z'; letra++)
 	{
-		putchar(letra);
-	}
-	for  (letra = 'A'; letra <= 'Z'; letra++)
-	{
-		putchar(letra);
+
+	if (letra != 'q' && letra != 'e')
+        {
+            putchar(letra);
+        }
 	}
 putchar('\n');
 

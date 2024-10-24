@@ -13,13 +13,9 @@ int main(void)
 
 	for  (letra = 'a'; letra <= 'z'; letra++)
 	{
-
-	if (letra != 'q' && letra != 'e')
-        {
-            putchar(letra);
-        }
+		putchar(letra);
 	}
-putchar('\n');
-
-return (0);
-}
+	for  (letra = 'A'; letra <= 'Z'; letra++)
+	{
+		putchar(letra);
+	}
