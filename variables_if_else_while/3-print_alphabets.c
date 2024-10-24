@@ -15,7 +15,10 @@ int main(void)
 	{
 		putchar(letra);
 	}
-
+	for  (letra = 'A'; letra <= 'Z'; letra++)
+	{
+		putchar(letra);
+	}
 putchar('\n');
 
 return (0);
