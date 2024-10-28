@@ -1,13 +1,24 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* main- This function prints a message.
+* jack_bauer - This function prints a message.
 *
 * Return: Always 0 (success)
 */
-int main(void)
+void jack_bauer(void)
 {
-	jack_bauer();
+	int hours, minutes;
 
-	return (0);
+	for (hours = 0; hours < 24; hours++)
+	{
+		for (minutes = 0; minutes < 60; minutes++)
+		{
+			_putchar(hours / 10 + '0');
+			_putchar(hours % 10 + '0');
+			_putchar(':');
+			_putchar(minutes / 10 + '0');
+			_putchar(minutes % 10 + '0');
+			_putchar('\n');
+		}
+	}
 }
