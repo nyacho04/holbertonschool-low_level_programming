@@ -7,14 +7,14 @@
 */
 void print_most_numbers(void)
 {
-char numbr;
+	char numbr;
 
-for (numbr = '0'; numbr <= '9'; numbr++)
-{
-if (numbr != '2' && numbr != '4')
-{
-_putchar(numbr);
-}
-}
-_putchar('\n');
+	for (numbr = '0'; numbr <= '9'; numbr++)
+	{
+		if (numbr != '2' && numbr != '4')
+		{
+		_putchar(numbr);
+		}
+	}
+	_putchar('\n');
 }
