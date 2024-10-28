@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* last_digit - This function prints a message.
+* print_last_digit - This function prints a message.
 *
 * @n: The character to be checked
 *
