@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ -z "$CFILE" ]; then
+    echo " error xd \$CFILE"
+    exit 1
+fi
+OUTPUT_FILE="${CFILE%.c}.s"
+
+gcc -S -masm=intel "$CFILE" -o "$OUTPUT_FILE"
