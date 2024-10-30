@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 /**
 * print_rev - Entry point
@@ -12,16 +13,18 @@
 
 void print_rev(char *s)
 {
-	int length = 0;
+	int nya = 0;
 
-	while (s[length] != '\0')
+	while (s[nya] != '\0')
 	{
-		length++;
+		nya++;
 	}
 
-	for (length--; length >= 0; length--)
+	while (nya > 0)
 	{
-		printf("%c", s[length]);
+		nya--;
+		write(1, &s[nya], 1);
 	}
-	printf("\n");
+
+	write(1, "\n", 1);
 }
