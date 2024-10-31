@@ -16,7 +16,7 @@ int _atoi(char *s)
 	int resultado = 0;
 	int nya = 1;
 
-	for (; *s && (*s < '0' && *s > '9'); s++)
+	for (; *s && (*s < '0' || *s > '9'); s++)
 	{
 		if (*s == '-')
 		nya = -nya;
