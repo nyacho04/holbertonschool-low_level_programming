@@ -16,7 +16,6 @@ char *cap_string(char *str)
 	int n = 0;
 
 	if (str[n] >= 'a' && str[n] <= 'z')
-		str[n] -= 'a' - 'A';
 
 	while (str[n] != '\0')
 	{
