@@ -26,6 +26,7 @@ char *rot13(char *s)
 			if (s[i] == a[nya])
 			{
 				s[i] = z[nya];
+				break;
 			}
 		}
 	}
