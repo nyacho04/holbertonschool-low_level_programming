@@ -15,7 +15,6 @@ char *rot13(char *s)
 {
 	int i;
 	int nya;
-
 	char *a = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char *z = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
