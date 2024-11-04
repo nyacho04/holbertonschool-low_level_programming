@@ -13,20 +13,21 @@
 
 char *rot13(char *s)
 {
+	int i;
 	int nya;
-	int n;
+
 	char *a = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char *z = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (nya = 0; s[nya] != '\0'; nya++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-	for (n = 0; a[n] != '\0'; nya++)
-	{
-		if (s[nya] == a[n])
+		for (nya = 0; nya < 52; nya++)
 		{
-			s[nya] = z[n];
+			if (s[i] == a[nya])
+			{
+				s[i] = z[nya];
+			}
 		}
-	}
 	}
 	return (s);
 }
