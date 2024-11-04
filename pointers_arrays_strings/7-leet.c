@@ -20,13 +20,13 @@ char *leet(char *s)
 
 	for (nya = 0; s[nya] != '\0'; nya++)
 	{
-	for (n = 0; n < 10; n++)
-	{
-		if (s[nya] == a[n])
+		for (n = 0; n < 10; n++)
 		{
-			s[nya] = z[n];
+			if (s[nya] == a[n])
+			{
+				s[nya] = z[n];
+			}
 		}
-	}
 	}
 	return (s);
 }
