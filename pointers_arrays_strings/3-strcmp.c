@@ -6,6 +6,7 @@
 * @s1: first string
 *
 * @s2: second string
+*
 * Description: This function prints a message.
 *
 * Return: Always 0 (success)
