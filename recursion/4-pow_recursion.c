@@ -7,7 +7,6 @@
 *
 * @y: The power to which the base is raised
 *
-*
 * Return: 1 if c is uppercase, 0 otherwise.
 */
 
