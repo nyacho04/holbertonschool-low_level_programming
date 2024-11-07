@@ -10,17 +10,30 @@
 
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
+	return (_sqrt_help(n, 1));
+}
+/**
+* _sqrt_help - This function prints a message.
+*
+* @n: The number to be printed.
+*
+* @nya: The number to be printed.
+*
+* Return: 1 if c is uppercase, 0 otherwise.
+*/
+
+int _sqrt_help(int n, int nya)
+{
+	if (nya * nya == n)
 	{
-		printf("Error\n");
-		return (-1);
+		return (nya);
 	}
-	else if (n == 0 || n == 1)
+	else if (nya * nya > n)
 	{
-		return (n);
+		return (-1);
 	}
 	else
 	{
-		return (_sqrt_recursion(n - 1) + 1);
+		return (_sqrt_help(n, nya + 1));
 	}
 }
