@@ -7,6 +7,7 @@
 *
 * Return: 1 if c is uppercase, 0 otherwise.
 */
+
 void _puts_recursion(char *s)
 {
 	if (*s == '\0')
