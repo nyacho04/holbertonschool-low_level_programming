@@ -23,4 +23,5 @@ void print_array(int *a, int n)
 		if (nya < n - 1)
 		printf(", ");
 	}
+	printf("\n");
 }
