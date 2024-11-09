@@ -10,7 +10,6 @@
 * Return: 1 if c is uppercase, 0 otherwise.
 */
 
-
 int main(int argc, char *argv[])
 {
 	int i;
