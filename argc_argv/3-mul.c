@@ -12,6 +12,9 @@
 
 int main(int argc, char *argv[])
 {
+	int number1;
+	int number2;
+	int resultado;
 
 	if (argc != 3)
 	{
@@ -19,3 +22,11 @@ int main(int argc, char *argv[])
 
 		return (1);
 	}
+	number1 = atoi(argv[1]);
+	number2 = atoi(argv[2]);
+	resultado = number1 * number2;
+
+	printf("%d\n", resultado);
+
+	return (0);
+}
