@@ -17,11 +17,6 @@ char *create_array(unsigned int size, char c)
 
 	array = malloc(size * sizeof(char));
 
-	if (array == NULL)
-	{
-		return (NULL);
-	}
-
 	if (size == 0)
 	{
 		printf("failed to allocate memory\n");
