@@ -23,6 +23,12 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 
+	if (array == NULL)
+	{
+		printf("failed to allocate memory\n");
+		return (NULL);
+	}
+
 	for (i = 0; i < size; i++)
 	{
 		array[i] = c;
