@@ -1,3 +1,5 @@
+#ifndef DOG_H
+#define DOG_H
 /**
 * struct dog - Define a dog's attributes.
 * @name: Pointer to the dog's name.
@@ -13,3 +15,4 @@ struct dog
 	char *owner;
 
 };
+#endif
