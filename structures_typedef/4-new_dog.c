@@ -13,6 +13,7 @@
 *
 * Return: A pointer to the new dog, or NULL if memory allocation fails.
 */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
