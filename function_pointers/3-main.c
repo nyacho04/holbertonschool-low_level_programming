@@ -17,7 +17,7 @@ int num1;
 int num2;
 int resultado;
 
-	int (*operacion)(int, int);
+int (*operacion)(int, int);
 
 	if (argc != 4)
 	{
