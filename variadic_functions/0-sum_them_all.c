@@ -5,8 +5,6 @@
 *
 * @n: The number of integers passed to the function.
 *
-* @...: A variable number of integers to be printed.
-*
 * Return: The sum of all the integers passed to the function.
 */
 int sum_them_all(const unsigned int n, ...)
