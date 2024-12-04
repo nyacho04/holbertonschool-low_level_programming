@@ -2,6 +2,7 @@
     "C_Cpp.default.compilerPath": "/home/nyacho/holbertonschool-low_level_programming/hello_world/4-puts.c",
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
-        "main.h": "c"
+        "main.h": "c",
+        "lists.h": "c"
     }
 }

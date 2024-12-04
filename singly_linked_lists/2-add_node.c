@@ -16,38 +16,37 @@ list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
 
-	new_node = malloc(sizeof(list_t));
-	if (new_node == NULL)
+	if (!head)
 	{
-		return (NULL);
-	}
-	new_node->str = strdup(str);
-	if (new_node->str == NULL)
-	{
-		free(new_node);
-		return (NULL);
+	return (NULL);
 	}
 
+	new_node = malloc(sizeof(list_t));
+	if (!new_node)
+	{
+	return (NULL);
+	}
+	new_node->str = strdup(str);
 	new_node->next = *head;
+	new_node->len = strlen(str);
 	*head = new_node;
 
 	return (new_node);
 }
 /**
-* print_list - prints all the elements of a list
-*
-* @h: the head of the list
-*
-* Return: the number of nodes in the list
-*/
+ * _strlen - returns the length of a string
+ * @str: string
+ * Return: len
+ */
 
-void print_list(const list_t *h)
+int _strlen(const char *str)
 {
-	const list_t *temp = h;
+	int len = 0;
 
-	while (temp)
+	while (str[len] != '\0')
 	{
-		printf("[%lu] %s\n", strlen(temp->str), temp->str);
-		temp = temp->next;
+	len++;
 	}
+
+	return (len);
 }
