@@ -33,3 +33,21 @@ list_t *add_node(list_t **head, const char *str)
 
 	return (new_node);
 }
+/**
+* print_list - prints all the elements of a list
+*
+* @h: the head of the list
+*
+* Return: the number of nodes in the list
+*/
+
+void print_list(const list_t *h)
+{
+	const list_t *temp = h;
+
+	while (temp)
+	{
+		printf("[%lu] %s\n", strlen(temp->str), temp->str);
+		temp = temp->next;
+	}
+}
