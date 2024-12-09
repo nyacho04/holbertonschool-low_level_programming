@@ -7,10 +7,13 @@
 #include <fcntl.h>
 #include <unistd.h>
 /**
-* read_textfile - lee un archivo de texto
-* @filename: nombre del archivo
-* @letters: cantidad de letras
-* Return: el texto
+* read_textfile - reads a text file and prints it to the POSIX standard output.
+*
+* @filename: the name of the file to be read.
+*
+* @letters: the number of letters to be printed from the file.
+*
+* Return: the number of characters read and printed.
 */
 
 ssize_t read_textfile(const char *filename, size_t letters)
